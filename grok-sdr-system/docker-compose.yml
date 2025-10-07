@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ../Dockerfile.backend
+    ports:
+      - "8001:8001"
+    environment:
+      - GROK_API_KEY=${GROK_API_KEY}
+      - DATABASE_URL=sqlite:///./sdr_system.db
+    volumes:
+      - ./backend:/app
+      - ./data:/app/data
+    networks:
+      - sdr-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ../Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_URL=http://localhost:8001
+    networks:
+      - sdr-network
+
+networks:
+  sdr-network:
+    driver: bridge
+
+volumes:
+  data:
