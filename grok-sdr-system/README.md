@@ -68,7 +68,7 @@ The Grok SDR System leverages Grok AI as its core intelligence layer to automate
 - **Audit Trail** - Complete history for compliance and review
 
 ### 🎨 Modern User Interface
-- **Ford F-150 Lightning Antimatter Blue Theme** - Professional dark blue with teal highlights
+- **Antimatter Blue Theme** - Professional dark blue with teal highlights
 - **Responsive Design** - Scales perfectly with browser window
 - **Intuitive Navigation** - Clean, modern layout with easy access to all features
 - **Visual Feedback** - Hover effects, transitions, and loading states

@@ -94,14 +94,11 @@ function App() {
     fetchPipelineStats();
   }, []);
 
-  // Auto-generate message when lead is selected and message box is open
+  // Close message box when a different lead is selected
   useEffect(() => {
-    if (selectedLead && generatedMessage) {
-      // When a new lead is selected and the message box is open,
-      // auto-generate the first recommended message type for that lead
-      const recommendedTypes = getRecommendedMessageTypes(selectedLead.pipeline_stage);
-      const firstRecommendedType = recommendedTypes[0].type;
-      generateMessage(selectedLead.id, firstRecommendedType);
+    if (generatedMessage) {
+      // When a different lead is selected and message box is open, close it
+      setGeneratedMessage(null);
     }
   }, [selectedLead?.id]); // Only trigger when selectedLead ID changes
 
@@ -882,15 +879,6 @@ function App() {
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                           <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
                           <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
-                        </svg>
-                      </button>
-                      <button
-                        onClick={() => setShowDeleteConfirm(true)}
-                        className="btn-icon-delete"
-                        title="Delete lead"
-                      >
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                          <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2" />
                         </svg>
                       </button>
                     </div>
