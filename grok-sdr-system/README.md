@@ -1,6 +1,6 @@
-# Grok SDR System
+# AI-powered SDR System
 
-An AI-powered Sales Development Representative (SDR) system built with Grok AI, designed to streamline lead qualification, personalized messaging, and sales pipeline management.
+An AI-powered Sales Development Representative (SDR) system built with Grok API, designed to streamline lead qualification, personalized messaging, and sales pipeline management.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![Python](https://img.shields.io/badge/python-3.11+-green)
@@ -9,7 +9,7 @@ An AI-powered Sales Development Representative (SDR) system built with Grok AI, 
 
 ## 🚀 Overview
 
-The Grok SDR System leverages Grok AI as its core intelligence layer to automate and enhance the sales development process. It provides intelligent lead scoring, context-aware message generation, automated pipeline progression, and comprehensive activity tracking—all through an intuitive, modern interface designed for sales teams.
+The SDR System leverages Grok AI as its core intelligence layer to automate and enhance the sales development process. It provides intelligent lead scoring, context-aware message generation, automated pipeline progression, and comprehensive activity tracking—all through an intuitive, modern interface designed for sales teams.
 
 ---
 
