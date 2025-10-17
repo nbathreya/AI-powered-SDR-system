@@ -1,8 +1,8 @@
-xai-YZPDYNPhIVO3zTu0WDxVw0zJzaRBlbun0aiXO194Jx1taU7dYXjH0fBsHvqs4xjd21VERiSZfngUz2LL
+"ENTER YOUR API KEY HERE"
 
 curl https://api.x.ai/v1/chat/completions \
     -H "Content-Type: application/json" \
-    -H "Authorization: Bearer xai-YZPDYNPhIVO3zTu0WDxVw0zJzaRBlbun0aiXO194Jx1taU7dYXjH0fBsHvqs4xjd21VERiSZfngUz2LL" \
+    -H "Authorization: Bearer "ENTER YOUR API KEY HERE" " \
     -d '{
       "messages": [
         {
